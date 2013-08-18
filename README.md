@@ -1,4 +1,3 @@
-dotfiles
-========
+Auto install (Shamelessly stolen from https://github.com/vgod/vimrc cause its damn good):
 
-All the dotfiles!
+    curl -o - https://raw.github.com/runningferret/vimrc/master/install.sh | sh
