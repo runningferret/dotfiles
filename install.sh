@@ -2,6 +2,7 @@
 #Shamlessly stolen from https://github.com/vgod/vimrc
 VIMHOME=~/.vim
 DOTFILESHOME=~/dotfiles
+VUNDLEHOME=~/.vim/bundle/vundle
 
 warn() {
     echo "$1" >&2
@@ -16,10 +17,16 @@ die() {
 [ -e "~/.vim" ] && die "~/.vim already exists."
 [ -e "~/.vimrc" ] && die "~/.vimrc already exists."
 
-# git clone git://github.com/runningferret/vimrc "$VIMHOME"
 git clone git://github.com/runningferret/dotfiles "$DOTFILESHOME"
-
-git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
+cd "$DOTFILESHOME" && git pull
+git clone https://github.com/gmarik/vundle.git "$VUNDLEHOME"
+cd "$VUNDLEHOME" && git pull
 
 cd $DOTFILESHOME
-./install-vim.sh
+for script in `ls install-*`
+do
+  echo "Running $script"
+  ./$script
+done
+# ./install-vim.sh
+
