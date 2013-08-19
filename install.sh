@@ -28,5 +28,3 @@ do
   echo "Running $script"
   ./$script
 done
-# ./install-vim.sh
-
