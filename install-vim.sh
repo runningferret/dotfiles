@@ -18,7 +18,7 @@ ln -s dotfiles/.vim/gvimrc .gvimrc
 
 yes | vim +BundleInstall +qall
 cd ~/.vim/bundle/command-t/ruby/command-t
-rbenv use system
+rbenv local system
 ruby extconf.rb
 make clean
 make
