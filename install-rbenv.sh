@@ -30,5 +30,5 @@ else
   echo "******************************************"
   echo "Running: $RBENV_VERSION... This is gonna take a while, be patient"
   echo "******************************************"
-  `$RBENV_VERSION`
+  `rbenv install $RBENV_VERSION`
 fi
