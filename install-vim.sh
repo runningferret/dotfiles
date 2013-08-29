@@ -1,4 +1,4 @@
-#!/bin/bash --login
+#!/bin/bash
 #Shamlessly stolen from https://github.com/vgod/vimrc
 cd ~
 ls -s dotfiles/.vim .vim 
@@ -18,7 +18,7 @@ ln -s dotfiles/.vim/gvimrc .gvimrc
 
 yes | vim +BundleInstall +qall
 cd ~/.vim/bundle/command-t/ruby/command-t
-rvm use system #Needs a login shell. Should be using rbenv
+rbenv use system
 ruby extconf.rb
 make clean
 make
