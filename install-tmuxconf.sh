@@ -1,7 +1,7 @@
 #!/bin/sh
 
 cd ~
-if [ -e .tmux.conf ]
+if [ -h .tmux.conf ]
 then
   mv .tmux.conf .tmux.conf.backup
   echo "Moved existing .tmux.conf to .tmux.conf.backup"

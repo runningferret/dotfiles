@@ -2,7 +2,7 @@
 #Shamlessly stolen from https://github.com/vgod/vimrc
 cd ~
 ls -s dotfiles/vim .vim 
-if [ -e .vimrc ]
+if [ -h .vimrc ]
 then
   mv .vimrc .vimrc.backup
   echo "Moved existing .vimrc to .vimrc.backup"
