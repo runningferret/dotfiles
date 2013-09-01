@@ -13,9 +13,13 @@ die() {
     exit 1
 }
 
-[ -e "$VIMHOME/vimrc" ] && die "$VIMHOME/vimrc already exists."
-[ -e "~/.vim" ] && die "~/.vim already exists."
-[ -e "~/.vimrc" ] && die "~/.vimrc already exists."
+if [ -e "${VIMHOME}" ]
+then
+  mv $VIMHOME $VIMHOME.bak
+  echo "Moved existing $VIMHOME to $VIMHOME.bak"
+  mkdir $VIMHOME
+  echo "Created $VIMHOME"
+fi
 
 git clone git://github.com/runningferret/dotfiles "$DOTFILESHOME"
 cd "$DOTFILESHOME" && git pull
