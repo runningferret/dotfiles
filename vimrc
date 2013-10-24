@@ -34,6 +34,7 @@ set incsearch
 set number
 set autoindent
 
+nnoremap <Leader>t :CtrlP<CR>
 nnoremap <Leader>nt :NERDTreeToggle<CR>
 nnoremap <Leader>nf :NERDTreeFind<CR>
 nnoremap <Leader>nh :nohlsearch<CR>
