@@ -17,9 +17,9 @@ Bundle 'desert256.vim'
 Bundle 'altercation/vim-colors-solarized'
 Bundle 'scrooloose/nerdtree'
 Bundle 'bufexplorer.zip'
-Bundle 'git://git.wincent.com/command-t.git'
 Bundle 'tComment'
 Bundle 'ack.vim'
+Bundle 'kien/ctrlp.vim'
 
 syntax enable
 

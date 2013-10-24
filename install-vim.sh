@@ -11,8 +11,3 @@ ln -s dotfiles/vimrc .vimrc
 echo "Installed .vimrc!"
 
 yes | vim +BundleInstall +qall
-cd ~/.vim/bundle/command-t/ruby/command-t
-rbenv local system
-ruby extconf.rb
-make clean
-make
