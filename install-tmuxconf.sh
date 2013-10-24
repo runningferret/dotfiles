@@ -9,3 +9,10 @@ fi
 
 ln -s dotfiles/tmux.conf .tmux.conf
 echo "Installed tmuxconf!"
+
+if [[ `brew list` =~ 'tmux' ]]
+then
+  echo "Skipping... tmux already installed"
+else
+  brew install tmux
+fi

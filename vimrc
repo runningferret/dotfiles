@@ -44,9 +44,4 @@ nnoremap <Leader>rt :!ctags -R<CR>
 nnoremap <silent> <Leader>cc :TComment<CR>
 nnoremap <Leader>aw :Ack '<C-R><C-W>'
 
-if hostname() == 'tcastiglione.backstop.local'
-    set background=light
-else
-    set background=dark
-end
-colorscheme solarized
+colorscheme desert256
