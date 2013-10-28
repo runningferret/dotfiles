@@ -11,3 +11,10 @@ ln -s dotfiles/vimrc .vimrc
 echo "Installed .vimrc!"
 
 yes | vim +BundleInstall +qall
+
+if [[ `brew list` =~ 'ctags' ]]
+then
+  echo "Skipping... ctags already installed"
+else
+  brew install ctags
+fi

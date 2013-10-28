@@ -44,4 +44,5 @@ nnoremap <Leader>rt :!ctags -R<CR>
 nnoremap <silent> <Leader>cc :TComment<CR>
 nnoremap <Leader>aw :Ack '<C-R><C-W>'
 
-colorscheme desert256
+set background=dark
+colorscheme solarized
