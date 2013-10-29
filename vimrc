@@ -46,3 +46,4 @@ nnoremap <Leader>aw :Ack '<C-R><C-W>'
 
 set background=dark
 colorscheme solarized
+set bs=indent,eol,start
