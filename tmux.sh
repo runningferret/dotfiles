@@ -1,6 +1,6 @@
 #!/bin/bash
 COMMAND='tmux -S /var/tmux/pairing'
-$COMMAND new-session -d -s air -n "main" "source ~/.bash_profile; cd dev; vim ."
+$COMMAND new-session -d -s air -n "main"
 
 $COMMAND splitw -d
 $COMMAND splitw -d

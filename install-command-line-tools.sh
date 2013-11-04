@@ -6,3 +6,10 @@ then
 else
   brew install ack
 fi
+
+if [[ `brew list` =~ 'wget' ]]
+then
+  echo "Skipping... wget already installed"
+else
+  brew install wget
+fi
