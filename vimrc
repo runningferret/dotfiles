@@ -33,7 +33,11 @@ set hlsearch
 set incsearch
 set number
 set autoindent
+set nrformats=
+set background=dark
+set bs=indent,eol,start
 
+nnoremap <F5> :tnext<CR>
 nnoremap <Leader>t :CtrlP<CR>
 nnoremap <Leader>nt :NERDTreeToggle<CR>
 nnoremap <Leader>nf :NERDTreeFind<CR>
@@ -44,6 +48,4 @@ nnoremap <Leader>rt :!ctags -R<CR>
 nnoremap <silent> <Leader>cc :TComment<CR>
 nnoremap <Leader>aw :Ack '<C-R><C-W>'
 
-set background=dark
 colorscheme solarized
-set bs=indent,eol,start
