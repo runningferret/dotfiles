@@ -36,6 +36,11 @@ set autoindent
 set nrformats=
 set background=dark
 set bs=indent,eol,start
+set relativenumber 
+set number          
+
+highlight OverLength ctermbg=red ctermfg=white guibg=#592929
+match OverLength /\%81v.\+/
 
 nnoremap <F5> :tnext<CR>
 nnoremap <Leader>t :CtrlP<CR>
