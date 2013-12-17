@@ -38,11 +38,10 @@ set background=dark
 set bs=indent,eol,start
 set relativenumber 
 set number          
-
-highlight OverLength ctermbg=red ctermfg=white guibg=#592929
-match OverLength /\%81v.\+/
+set colorcolumn=80
 
 nnoremap <F5> :tnext<CR>
+nnoremap <F4> :tprev<CR>
 nnoremap <Leader>t :CtrlP<CR>
 nnoremap <Leader>nt :NERDTreeToggle<CR>
 nnoremap <Leader>nf :NERDTreeFind<CR>
