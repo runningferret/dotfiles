@@ -1,7 +1,7 @@
 #!/bin/bash
 #Shamlessly stolen from https://github.com/vgod/vimrc
 cd ~
-if [ -h .vimrc ]
+if [ -e .vimrc ]
 then
   mv .vimrc .vimrc.backup
   echo "Moved existing .vimrc to .vimrc.backup"
