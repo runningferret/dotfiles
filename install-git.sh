@@ -1,5 +1,14 @@
 #!/bin/sh
 cd ~/dotfiles
 git remote set-url origin https://github.com/runningferret/dotfiles.git
-git config --global user.name "Tony Castiglione"
-git config --global user.email "runningferret@gmail.com"
+
+cd ~
+if [ -h .gitconfig ]
+then
+  mc .gitconfig .gitconfig.backup
+  echo "Moved existing .gitconfig to .gitconfig.backup"
+fi
+
+ln -s dotfiles/gitconfig .gitconfig
+echo "Installed .gitconfig!"
+
