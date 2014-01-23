@@ -12,6 +12,12 @@ die() {
     warn "$1"
     exit 1
 }
+if [[ `brew list` =~ 'git' ]]
+then
+  echo "Skipping... git already installed"
+else
+  brew install git
+fi
 
 if [ -e "${VIMHOME}" ]
 then
