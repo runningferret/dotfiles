@@ -30,7 +30,6 @@ set shiftwidth=2
 set expandtab
 set hlsearch
 set incsearch
-set number
 set autoindent
 set nrformats=
 set background=dark
