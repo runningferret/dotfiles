@@ -16,13 +16,6 @@ else
   brew install ruby-build
 fi
 
-if grep -q "$RBENV_EVAL" ~/.bash_profile
-then
-  echo "Skipping... "$RBENV_EVAL" already in bash_profile"
-else
-  echo $RBENV_EVAL >> ~/.bash_profile
-fi
-
 if rbenv versions | grep -q "$RBENV_VERSION"
 then
   echo "Skipping... $RBENV_VERSION already installed!"
