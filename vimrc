@@ -5,6 +5,7 @@ set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
 let mapleader = "\\"
 let g:AckAllFiles = 0
+let g:rspec_command = "!rspec -d {spec}"
 Bundle 'gmarik/vundle'
 
 " Bundles
@@ -19,6 +20,7 @@ Bundle 'bufexplorer.zip'
 Bundle 'tComment'
 Bundle 'ack.vim'
 Bundle 'kien/ctrlp.vim'
+Bundle 'thoughtbot/vim-rspec'
 
 syntax enable
 
@@ -49,5 +51,9 @@ nnoremap <Leader>rd Orequire 'debugger'; debugger<Esc>
 nnoremap <Leader>rt :!ctags -R<CR>
 nnoremap <silent> <Leader>cc :TComment<CR>
 nnoremap <Leader>aw :Ack '<C-R><C-W>'
+nnoremap <Leader>ss :call RunNearestSpec()<CR>
+nnoremap <Leader>st :call RunCurrentSpecFile()<CR>
+nnoremap <Leader>sl :call RunLastSpec()<CR>
+nnoremap <Leader>sa :call RunAllSpecs()<CR>
 
 colorscheme solarized
