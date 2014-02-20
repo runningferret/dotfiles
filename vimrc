@@ -51,8 +51,8 @@ nnoremap <Leader>rd Orequire 'debugger'; debugger<Esc>
 nnoremap <Leader>rt :!ctags -R<CR>
 nnoremap <silent> <Leader>cc :TComment<CR>
 nnoremap <Leader>aw :Ack '<C-R><C-W>'
-nnoremap <Leader>ss :call RunNearestSpec()<CR>
-nnoremap <Leader>st :call RunCurrentSpecFile()<CR>
+nnoremap <Leader>st :call RunNearestSpec()<CR>
+nnoremap <Leader>ss :call RunCurrentSpecFile()<CR>
 nnoremap <Leader>sl :call RunLastSpec()<CR>
 nnoremap <Leader>sa :call RunAllSpecs()<CR>
 
