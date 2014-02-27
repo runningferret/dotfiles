@@ -36,8 +36,8 @@ set autoindent
 set nrformats=
 set background=dark
 set bs=indent,eol,start
-set relativenumber 
-set number          
+set relativenumber
+set number
 set colorcolumn=80
 
 nnoremap <F5> :tnext<CR>
@@ -55,5 +55,18 @@ nnoremap <Leader>st :call RunNearestSpec()<CR>
 nnoremap <Leader>ss :call RunCurrentSpecFile()<CR>
 nnoremap <Leader>sl :call RunLastSpec()<CR>
 nnoremap <Leader>sa :call RunAllSpecs()<CR>
+
+function! <SID>StripTrailingWhitespace()
+    " Preparation: save last search, and cursor position.
+    let _s=@/
+    let l = line(".")
+    let c = col(".")
+    " Do the business:
+    %s/\s\+$//e
+    " Clean up: restore previous search history, and cursor position
+    let @/=_s
+    call cursor(l, c)
+endfunction
+nmap <silent> <Leader>ws :call <SID>StripTrailingWhitespace()<CR>
 
 colorscheme solarized
