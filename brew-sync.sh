@@ -28,8 +28,8 @@ cat /tmp/brew-sync.installed | sort | uniq > ~/Dropbox/Apps/Homebrew/brew-sync.i
 cat /tmp/brew-cask-sync.installed | sort | uniq > ~/Dropbox/Apps/Homebrew/brew-cask-sync.installed
 
 # Update brew
-echo "Running brew update"
-brew update
+echo "Update brew, brew-cask"
+brew update && brew upgrade brew-cask && brew cleanup
 
 # Set taps
 echo "Enabling taps..."
