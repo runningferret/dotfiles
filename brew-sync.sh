@@ -38,10 +38,12 @@ for TAP in `cat ~/Dropbox/Apps/Homebrew/brew-sync.taps`; do
 done
 
 # Install missing Homebrew packages
+BREW_LIST=`brew list`
+
 echo "Install missing brew packages..."
 for PACKAGE in `cat ~/Dropbox/Apps/Homebrew/brew-sync.installed`; do
   echo "Checking ${PACKAGE}..."
-  $BREW list ${PACKAGE} >/dev/null
+  grep -q ${PACKAGE} <<< $BREW_LIST >/dev/null #Here string, who knew
   if [ "$?" != "0" ]; then 
     echo " INSTALLING" 
     $BREW install ${PACKAGE}
@@ -51,10 +53,12 @@ for PACKAGE in `cat ~/Dropbox/Apps/Homebrew/brew-sync.installed`; do
 done
 
 # Install missing Homebrew Casks
+CASK_LIST=`brew cask list`
+
 echo "Install missing brew casks..."
 for PACKAGE in `cat ~/Dropbox/Apps/Homebrew/brew-cask-sync.installed`; do
   echo "Checking ${PACKAGE}..."
-  $CASK list ${PACKAGE} >/dev/null
+  grep -q ${PACKAGE} <<< $CASK_LIST >/dev/null
   if [ "$?" != "0" ]; then
     echo " INSTALLING" 
     $CASK install ${PACKAGE}
