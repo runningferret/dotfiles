@@ -36,8 +36,8 @@ set autoindent
 set nrformats=
 set background=dark
 set bs=indent,eol,start
-set number
 set relativenumber
+set number
 set colorcolumn=80
 
 nnoremap <F5> :tnext<CR>
