@@ -5,7 +5,6 @@ set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
 let mapleader = "\\"
 let g:AckAllFiles = 0
-let g:rspec_command = "!rspec -d {spec}"
 Bundle 'gmarik/vundle'
 
 " Bundles
