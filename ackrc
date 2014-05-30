@@ -1,0 +1,4 @@
+--ignore-dir=ahn/coverage
+--ignore-dir=ahn/log
+--ignore-file=is:ahn/tags
+--ignore-file=is:tags

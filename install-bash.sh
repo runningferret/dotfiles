@@ -16,3 +16,11 @@ else
   echo $BASH_PROFILE_COMMON >> ~/.bash_profile
   echo "Installed bash common stuff"
 fi
+
+if [ -e .ackrc ]
+then
+  mv .ackrc .ackrc.backup
+  echo "Moved existing .ackrc to .ackrc.backup"
+fi
+
+ln -s dotfiles/ackrc .ackrc 
