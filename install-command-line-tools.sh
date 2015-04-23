@@ -13,3 +13,5 @@ then
 else
   brew install wget
 fi
+
+gem install ripper-tags --no-rdoc --no-ri

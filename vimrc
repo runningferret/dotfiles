@@ -49,7 +49,7 @@ nnoremap <Leader>nf :NERDTreeFind<CR>
 nnoremap <Leader>nh :nohlsearch<CR>
 nnoremap <Leader>ff :FufFile<CR>
 nnoremap <Leader>rd Orequire 'debugger'; debugger<Esc>
-nnoremap <Leader>rt :!ctags -R<CR>
+nnoremap <Leader>rt :!ripper-tags -R --exclude=vendor<CR>
 nnoremap <silent> <Leader>cc :TComment<CR>
 nnoremap <Leader>aw :Ack '<C-R><C-W>'
 nnoremap <Leader>st :call RunNearestSpec()<CR>
