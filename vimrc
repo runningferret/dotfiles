@@ -11,10 +11,6 @@ Bundle 'gmarik/vundle'
 
 " Bundles
 Bundle 'vcscommand.vim'
-Bundle 'L9'
-Bundle 'FuzzyFinder'
-"Bundle 'tpope/vim-rails.git'
-Bundle 'tpope/vim-fugitive'
 Bundle 'altercation/vim-colors-solarized'
 Bundle 'scrooloose/nerdtree'
 Bundle 'bufexplorer.zip'
@@ -22,10 +18,12 @@ Bundle 'tComment'
 Bundle 'ack.vim'
 Bundle 'kien/ctrlp.vim'
 Bundle 'thoughtbot/vim-rspec'
+Bundle 'slim-template/vim-slim.git'
 
 syntax enable
 
 set mouse=a"Let mouse scrolling work in tmux
+set ttymouse=xterm2"Let mouse scrolling work in tmux
 set ignorecase
 set smartcase
 set tabstop=2
@@ -47,7 +45,6 @@ nnoremap <Leader>t :CtrlP<CR>
 nnoremap <Leader>nt :NERDTreeToggle<CR>
 nnoremap <Leader>nf :NERDTreeFind<CR>
 nnoremap <Leader>nh :nohlsearch<CR>
-nnoremap <Leader>ff :FufFile<CR>
 nnoremap <Leader>rd Orequire 'debugger'; debugger<Esc>
 nnoremap <Leader>rt :!ripper-tags -R --exclude=vendor<CR>
 nnoremap <silent> <Leader>cc :TComment<CR>

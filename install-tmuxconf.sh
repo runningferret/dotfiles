@@ -16,3 +16,10 @@ then
 else
   brew install tmux
 fi
+
+if [[ `brew list` =~ 'reattach-to-user-namespace' ]]
+then
+  echo "Skipping.... reattach-to-user-namespace already installed"
+else
+  brew install reattach-to-user-namespace
+fi

@@ -16,12 +16,3 @@ else
   brew install ruby-build
 fi
 
-if rbenv versions | grep -q "$RBENV_VERSION"
-then
-  echo "Skipping... $RBENV_VERSION already installed!"
-else
-  echo "******************************************"
-  echo "Running: $RBENV_VERSION... This is gonna take a while, be patient"
-  echo "******************************************"
-  `rbenv install $RBENV_VERSION`
-fi
