@@ -19,6 +19,7 @@ Bundle 'ack.vim'
 Bundle 'kien/ctrlp.vim'
 Bundle 'thoughtbot/vim-rspec'
 Bundle 'slim-template/vim-slim.git'
+Plugin 'jelera/vim-javascript-syntax'
 
 syntax enable
 
@@ -35,9 +36,9 @@ set autoindent
 set nrformats=
 set background=dark
 set bs=indent,eol,start
-set relativenumber
-set number
 set colorcolumn=80
+" set relativenumber
+set number
 
 nnoremap <F5> :tnext<CR>
 nnoremap <F4> :tprev<CR>
