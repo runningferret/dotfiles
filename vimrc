@@ -39,6 +39,7 @@ set bs=indent,eol,start
 set colorcolumn=80
 " set relativenumber
 set number
+set ttymouse=sgr
 
 nnoremap <F5> :tnext<CR>
 nnoremap <F4> :tprev<CR>
