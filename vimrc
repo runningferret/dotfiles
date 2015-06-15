@@ -47,7 +47,7 @@ nnoremap <Leader>t :CtrlP<CR>
 nnoremap <Leader>nt :NERDTreeToggle<CR>
 nnoremap <Leader>nf :NERDTreeFind<CR>
 nnoremap <Leader>nh :nohlsearch<CR>
-nnoremap <Leader>rd Orequire 'debugger'; debugger<Esc>
+nnoremap <Leader>rd Orequire 'pry'; binding.pry<Esc>
 nnoremap <Leader>rt :!ripper-tags -R --exclude=vendor<CR>
 nnoremap <silent> <Leader>cc :TComment<CR>
 nnoremap <Leader>aw :Ack '<C-R><C-W>'
