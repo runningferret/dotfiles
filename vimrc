@@ -20,6 +20,7 @@ Bundle 'kien/ctrlp.vim'
 Bundle 'thoughtbot/vim-rspec'
 Bundle 'slim-template/vim-slim.git'
 Plugin 'jelera/vim-javascript-syntax'
+Plugin 'airblade/vim-gitgutter'
 
 syntax enable
 

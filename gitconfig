@@ -1,8 +1,9 @@
 [user]
-	name = Tony Castiglione
-	email = runningferret@gmail.com
+	name = 
+	email = 
 [core]
 	editor = /usr/local/bin/vim
+	excludesfile = /Users/anthonycastigilone/.gitignore_global
 [push]
 	default = simple
 [color]
