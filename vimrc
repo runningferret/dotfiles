@@ -21,6 +21,8 @@ Bundle 'thoughtbot/vim-rspec'
 Bundle 'slim-template/vim-slim.git'
 Plugin 'jelera/vim-javascript-syntax'
 Plugin 'airblade/vim-gitgutter'
+Plugin 'ntpeters/vim-better-whitespace'
+Plugin 'nathanaelkane/vim-indent-guides'
 
 syntax enable
 
