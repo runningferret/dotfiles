@@ -73,3 +73,4 @@ endfunction
 nmap <silent> <Leader>ws :call <SID>StripTrailingWhitespace()<CR>
 
 colorscheme solarized
+set re=1
