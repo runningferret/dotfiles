@@ -7,6 +7,8 @@ let mapleader = "\\"
 let g:AckAllFiles = 0
 let g:rspec_runner = "os_x_iterm"
 let g:rspec_command = "!bundle exec rspec {spec}"
+let NERDTreeShowHidden=1
+
 Bundle 'gmarik/vundle'
 
 " Bundles
