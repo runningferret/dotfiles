@@ -14,6 +14,7 @@ Bundle 'gmarik/vundle'
 " Bundles
 Bundle 'vcscommand.vim'
 Bundle 'altercation/vim-colors-solarized'
+Bundle 'sickill/vim-monokai'
 Bundle 'scrooloose/nerdtree'
 Bundle 'bufexplorer.zip'
 Bundle 'tComment'
@@ -74,5 +75,5 @@ function! <SID>StripTrailingWhitespace()
 endfunction
 nmap <silent> <Leader>ws :call <SID>StripTrailingWhitespace()<CR>
 
-colorscheme solarized
+colorscheme monokai
 set re=1
