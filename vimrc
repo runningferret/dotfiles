@@ -54,7 +54,7 @@ nnoremap <Leader>nt :NERDTreeToggle<CR>
 nnoremap <Leader>nf :NERDTreeFind<CR>
 nnoremap <Leader>nh :nohlsearch<CR>
 nnoremap <Leader>rd Orequire 'pry'; binding.pry<Esc>
-nnoremap <Leader>rt :!ripper-tags -R --exclude=vendor<CR>
+nnoremap <Leader>rt :!ctags -R --exclude=vendor --exclude=node_modules<CR>
 nnoremap <silent> <Leader>cc :TComment<CR>
 nnoremap <Leader>aw :Ack '<C-R><C-W>'
 nnoremap <Leader>st :call RunNearestSpec()<CR>
