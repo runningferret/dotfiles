@@ -72,8 +72,7 @@ nnoremap <Leader>nt :NERDTreeToggle<CR>
 nnoremap <Leader>nf :NERDTreeFind<CR>
 nnoremap <Leader>nh :nohlsearch<CR>
 nnoremap <Leader>rd Orequire 'pry'; binding.pry<Esc>
-nnoremap <Leader>rt :!ctags -R --exclude=vendor --exclude=node_modules<CR>
-nnoremap <silent> <Leader>cc :TComment<CR>
+nnoremap <Leader>rt :!ctags -R --exclude=vendor --exclude=node_modules --exclude=app/assets --exclude=public --exclude=tmp<CR>nnoremap <silent> <Leader>cc :TComment<CR>
 nnoremap <Leader>aw :Ack! '<C-R><C-W>'
 nnoremap <Leader>st :call RunNearestSpec()<CR>
 nnoremap <Leader>ss :call RunCurrentSpecFile()<CR>
