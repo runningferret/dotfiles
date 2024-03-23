@@ -1,8 +1,12 @@
 " Vundle stuff
 set nocompatible
 filetype off
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+" alternatively, pass a path where Vundle should install plugins
+"call vundle#begin('~/some/path/here')
+
+" let Vundle manage Vundle, required
 set updatetime=100
 let mapleader = "\\"
 let g:AckAllFiles = 0
@@ -22,7 +26,7 @@ if executable('ag')
   let g:ctrlp_use_caching = 0
 endif
 
-Bundle 'gmarik/vundle'
+Plugin 'VundleVim/Vundle.vim'
 
 " Bundles
 Bundle 'vcscommand.vim'
@@ -43,7 +47,8 @@ Plugin 'nathanaelkane/vim-indent-guides'
 Plugin 'wincent/terminus'
 " Plugin 'tmux-plugins/vim-tmux-focus-events'
 
-
+call vundle#end()            " required
+filetype plugin indent on    " required
 
 syntax enable
 
@@ -94,4 +99,4 @@ endfunction
 nmap <silent> <Leader>ws :call <SID>StripTrailingWhitespace()<CR>
 
 colorscheme monokai
-set re=1 
+set re=1
